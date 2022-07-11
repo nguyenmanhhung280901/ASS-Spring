@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--css-->
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+    <!--js-->
+    <script th:src="@{/js/min.js}"></script>
+
+</head>
+<body>
+<h1>Profile</h1>
+
+<h1 th:text="${delete}"></h1>
+
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="LOGOUT">
+</form>
+</body>
+
+</html>
